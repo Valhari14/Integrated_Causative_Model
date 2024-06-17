@@ -1,0 +1,10 @@
+matplotlib
+pandas
+plotly
+protobuf
+scikit_learn
+seaborn
+streamlit
+google-generativeai
+google-cloud-aiplatform
+requests
