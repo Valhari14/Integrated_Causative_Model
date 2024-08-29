@@ -75,9 +75,9 @@ def main():
     "max_output_tokens": 2048,
     }
 
-    model = genai.GenerativeModel(model_name="gemini-pro-vision",
-                                generation_config=generation_config,
-                                )
+    model = genai.GenerativeModel(
+        model_name="gemini-1.0-pro", generation_config=generation_config, safety_settings=safety_settings
+    )
 
     categorical_cols = ['Accident_Classification', 'Accident_Spot', 'Accident_Location', 'Accident_SubLocation', 'Severity', 'Collision_Type', 'Junction_Control', 'Road_Character', 'Road_Type', 'Surface_Type', 'Surface_Condition', 'Road_Condition', 'Weather', 'Lane_Type', 'Side_Walk']
 
