@@ -83,7 +83,7 @@ def main():
     ]
     
     model = genai.GenerativeModel(
-        model_name="gemini-1.0-pro", generation_config=generation_config, safety_settings=safety_settings
+        model_name="gemini-1.5-flash", generation_config=generation_config, safety_settings=safety_settings
     )
 
     categorical_cols = ['Accident_Classification', 'Accident_Spot', 'Accident_Location', 'Accident_SubLocation', 'Severity', 'Collision_Type', 'Junction_Control', 'Road_Character', 'Road_Type', 'Surface_Type', 'Surface_Condition', 'Road_Condition', 'Weather', 'Lane_Type', 'Side_Walk']
